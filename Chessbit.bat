@@ -163,6 +163,7 @@ call :calc_legal
 set calc_time1=%TIME:~6,2%%TIME:~9,2%
 set /a calc_time=%calc_time1%-%calc_time2%
 echo %calc_time%
+cls
 goto print
 
 
@@ -245,6 +246,7 @@ goto print
 :: printed like this instead of automating it. It's ugly but it loads faster.
 :print
 	::echo %black_king_pos% %white_king_pos%
+	echo.
 	cecho {0F}
 	echo.
 	cecho {00}--{FF}------------------------------------------------{0F}{00}-
@@ -316,7 +318,7 @@ goto print
 	::Allow whitespace before the input prompt
 	for /f %%A in ('"prompt $H &echo on &for %%B in (1) do rem"') do set BS=%%A
 	set /p pgn_move=%BS%        Move:
-	<nul set /p uber=test|set /p pgn_move=Move:
+	::<nul set /p uber=test|set /p pgn_move=Move:
 	::cls
 	set space_var=pgn_move
 	call :add_space %pgn_move%
@@ -823,8 +825,7 @@ set first_eval=false
 			)
 		)
 		set /a eval=!eval!
-		echo %eval%
-	echo Eval:%eval% / 100
+	echo                     Eval:%eval% / 100
 	goto make_move
 ::) else (
 ::pause

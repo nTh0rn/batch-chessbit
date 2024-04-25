@@ -1,4 +1,7 @@
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I made this in 2021 with the intent of making it a full chess engine.
+![](https://www.nthorn.com/images/chessbit/default.png)
+[**Checkout my website which has this article and many others**](https://www.nthorn.com/blog/chessbit)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I made this in Batch with the intent of making it a full chess engine.
 Rather quickly, I realized that Batch was not at all powerful enough
 to run the computations needed to calculate future moves. This is as
 far as I got before I moved making this project into another language.
@@ -12,15 +15,16 @@ of the king. I don't plan on returning to this project and fixing this.
 you want it to move to. For example:
 ```e2e4```
 
+![](https://www.nthorn.com/images/chessbit/e2e4.png)
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Upon opening, whoever's move it is is determined by who actually moves first.
 This was done to avoid additional fen-parsing.
-
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Still a pretty cool demo though in my opinion! I might someday write up a full article about the challenges of this project and how I approached legal-move calculation. So for now, I encourage you to look at the code if you're curious!
 
 # Evaluation
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The evaluation only works by using piece-tables, obtained from [here](https://www.chessprogramming.org/Simplified_Evaluation_Function) (The Chess Programming Wiki is a goldmine, I highly recommend it.). Again, I was going to implement an actual chess-engine, and then I wised up.
-
+![](/images/chessbit/eval.png)
 ## A statement on switch-statements and the goto function.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A lot of what I wanted to do when writing this program was use switch-statements and goto loops. Unfortunately, Batch does not have switch statements. What it does have, however, is a dynamic text system that allows you to imbed variables into variable names.
 
