@@ -872,9 +872,3 @@ goto :eof
 	:piece_eval_k
 		set /a output=20000
 		goto :eof
-
-
-:ps_evaluation
-
-
-:pd_evaluation
