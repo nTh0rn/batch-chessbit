@@ -14,7 +14,7 @@ you want it to move to. For example:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Upon opening, whoever's move it is is determined by who actually moves first.
 This was done to avoid additional fen-parsing.
-Still a pretty fun demo though!
+Still a pretty cool demo though in my opinion! I might someday write up a full article about the challenges of this project and how I approached legal-move calculation. So for now, I encourage you to look at the code if you're curious!
 
 # Evaluation
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The evaluation only works by using piece-tables, obtained from [here](https://www.chessprogramming.org/Simplified_Evaluation_Function) (The Chess Programming Wiki is a goldmine, I highly recommend it.). Again, I was going to implement an actual chess-engine, and then I wised up.
