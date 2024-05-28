@@ -1,6 +1,6 @@
 ![](https://www.nthorn.com/images/chessbit/default.png)
 
-[**Checkout my website which has this article and many others**](https://www.nthorn.com/blog/chessbit)
+[**Checkout my website which has this article and many others**](https://www.nthorn.com/articles/chessbit)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I made this in Batch with the intent of making it a full chess engine.
 Rather quickly, I realized that Batch was not at all powerful enough
